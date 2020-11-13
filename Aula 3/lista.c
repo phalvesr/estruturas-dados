@@ -11,15 +11,12 @@ int main() {
   // printf("%i", listLength(l1));
   // breakLine();
   // printf("%i", getItemAt(l1, 0));
-
   char str[4];  char* ptr = &str[0];
+  
+  ptr = integerToCharSequence(1234, ptr, 'l');
 
-  char* t = integerToCharSequence(1234, ptr);
-
-  printf("%c", t[3]);
-  printf("%c", t[2]);
-  printf("%c", t[1]);
-  printf("%c", t[0]);
-
+  for (int i = 0; i < 4; i++) {
+    printf("%c", str[i]);
+  }
   return 0;
 }
